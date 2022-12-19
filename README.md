@@ -47,5 +47,5 @@ Ademas se permite:
 * Crear un permiso
 * Editar usuario, rol y/o permiso
 
-Todos los endpoints correspondientes se encuentran en el archivo **Auth.postman_collection.json** que contiene la coleccion de Postman utilizada
+Todos los endpoints correspondientes se encuentran en el archivo **Collección Postman AuthService.json** que contiene la coleccion de Postman utilizada
 
