@@ -1,0 +1,495 @@
+{
+	"info": {
+		"_postman_id": "219f1a88-5dc2-4941-877a-821aa39e9aeb",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13703513"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMDA2IiwibmFtZSI6Imxlb2R1Y2EiLCJyb2xlIjoiQWRtaW5pc3RyYWRvciIsIm5iZiI6MTY2NjE4OTYyNSwiZXhwIjoxNjY2Mjc2MDI1LCJpYXQiOjE2NjYxODk2MjV9.SxUuZGh7Mh-GYKV7y363TCIFJM7WKxGGlXdctno0yWztFDdWLsVcp46BGKEgJdTVEpr_FpUpybcUK3hQaHde8Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7051/api/Users",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7051",
+							"path": [
+								"api",
+								"Users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMDA2IiwibmFtZSI6Imxlb2R1Y2EiLCJyb2xlIjoiQWRtaW5pc3RyYWRvciIsIm5iZiI6MTY2NjE4OTYyNSwiZXhwIjoxNjY2Mjc2MDI1LCJpYXQiOjE2NjYxODk2MjV9.SxUuZGh7Mh-GYKV7y363TCIFJM7WKxGGlXdctno0yWztFDdWLsVcp46BGKEgJdTVEpr_FpUpybcUK3hQaHde8Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7051/api/Users/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7051",
+							"path": [
+								"api",
+								"Users",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMDA2IiwibmFtZSI6Imxlb2R1Y2EiLCJyb2xlIjoiQWRtaW5pc3RyYWRvciIsIm5iZiI6MTY2NjE4OTYyNSwiZXhwIjoxNjY2Mjc2MDI1LCJpYXQiOjE2NjYxODk2MjV9.SxUuZGh7Mh-GYKV7y363TCIFJM7WKxGGlXdctno0yWztFDdWLsVcp46BGKEgJdTVEpr_FpUpybcUK3hQaHde8Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"diloretoignacio\",\r\n  \"firstName\": \"Ignacio\",\r\n  \"lastName\": \"Di Loreto\",\r\n  \"phone\": \"1561990876\",\r\n  \"dni\": \"32845146\",\r\n  \"email\": \"diloretoignacio@gmail.com\",\r\n  \"rolId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7051/api/Users",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7051",
+							"path": [
+								"api",
+								"Users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"diloretoignacio\",\r\n  \"password\": \"Inter7/\"  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7051/api/Users/login/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7051",
+							"path": [
+								"api",
+								"Users",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rol",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMDA2IiwibmFtZSI6Imxlb2R1Y2EiLCJyb2xlIjoiQWRtaW5pc3RyYWRvciIsIm5iZiI6MTY2NjE4OTYyNSwiZXhwIjoxNjY2Mjc2MDI1LCJpYXQiOjE2NjYxODk2MjV9.SxUuZGh7Mh-GYKV7y363TCIFJM7WKxGGlXdctno0yWztFDdWLsVcp46BGKEgJdTVEpr_FpUpybcUK3hQaHde8Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7051/api/Roles",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7051",
+							"path": [
+								"api",
+								"Roles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMDA2IiwibmFtZSI6Imxlb2R1Y2EiLCJyb2xlIjoiQWRtaW5pc3RyYWRvciIsIm5iZiI6MTY2NjE4OTYyNSwiZXhwIjoxNjY2Mjc2MDI1LCJpYXQiOjE2NjYxODk2MjV9.SxUuZGh7Mh-GYKV7y363TCIFJM7WKxGGlXdctno0yWztFDdWLsVcp46BGKEgJdTVEpr_FpUpybcUK3hQaHde8Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7051/api/Roles/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7051",
+							"path": [
+								"api",
+								"Roles",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMDA2IiwibmFtZSI6Imxlb2R1Y2EiLCJyb2xlIjoiQWRtaW5pc3RyYWRvciIsIm5iZiI6MTY2NjE4OTYyNSwiZXhwIjoxNjY2Mjc2MDI1LCJpYXQiOjE2NjYxODk2MjV9.SxUuZGh7Mh-GYKV7y363TCIFJM7WKxGGlXdctno0yWztFDdWLsVcp46BGKEgJdTVEpr_FpUpybcUK3hQaHde8Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Aprobador2\",\r\n  \"description\": \"Perfil que podrá gestionar un ticket\",\r\n  \"permissions\": [\r\n    {\r\n      \"permissionId\": 1\r\n    },\r\n    {\r\n      \"permissionId\": 2\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7051/api/Roles",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7051",
+							"path": [
+								"api",
+								"Roles"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Permission",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMDA2IiwibmFtZSI6Imxlb2R1Y2EiLCJyb2xlIjoiQWRtaW5pc3RyYWRvciIsIm5iZiI6MTY2NjE4OTYyNSwiZXhwIjoxNjY2Mjc2MDI1LCJpYXQiOjE2NjYxODk2MjV9.SxUuZGh7Mh-GYKV7y363TCIFJM7WKxGGlXdctno0yWztFDdWLsVcp46BGKEgJdTVEpr_FpUpybcUK3hQaHde8Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7051/api/Permissions",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7051",
+							"path": [
+								"api",
+								"Permissions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMDA2IiwibmFtZSI6Imxlb2R1Y2EiLCJyb2xlIjoiQWRtaW5pc3RyYWRvciIsIm5iZiI6MTY2NjE4OTYyNSwiZXhwIjoxNjY2Mjc2MDI1LCJpYXQiOjE2NjYxODk2MjV9.SxUuZGh7Mh-GYKV7y363TCIFJM7WKxGGlXdctno0yWztFDdWLsVcp46BGKEgJdTVEpr_FpUpybcUK3hQaHde8Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7051/api/Permissions/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7051",
+							"path": [
+								"api",
+								"Permissions",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7051/api/Permissions/1",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7051",
+									"path": [
+										"api",
+										"Permissions",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Sep 2022 19:11:27 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"Crear Ticket\",\n    \"description\": \"permiso que permite dar de alta un ticket\"\n}"
+						},
+						{
+							"name": "NotFound",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://localhost:7051/api/Permissions/20",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7051",
+									"path": [
+										"api",
+										"Permissions",
+										"20"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/problem+json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Sep 2022 19:27:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"type\": \"https://tools.ietf.org/html/rfc7231#section-6.5.4\",\n    \"title\": \"Not Found\",\n    \"status\": 404,\n    \"traceId\": \"00-a1e779205645d317ff51c12d82ad420e-644affa0e0d7d53e-00\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMDA2IiwibmFtZSI6Imxlb2R1Y2EiLCJyb2xlIjoiQWRtaW5pc3RyYWRvciIsIm5iZiI6MTY2NjE4OTYyNSwiZXhwIjoxNjY2Mjc2MDI1LCJpYXQiOjE2NjYxODk2MjV9.SxUuZGh7Mh-GYKV7y363TCIFJM7WKxGGlXdctno0yWztFDdWLsVcp46BGKEgJdTVEpr_FpUpybcUK3hQaHde8Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Actualzar Ticket2\",\r\n  \"description\": \"Nivel de permiso que habilita a aprobar un ticket\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7051/api/Permissions",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7051",
+							"path": [
+								"api",
+								"Permissions"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Eliminar Ticket\",\r\n  \"description\": \"Nivel de permiso que habilita a eliminar un ticket\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7051/api/Permissions",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7051",
+									"path": [
+										"api",
+										"Permissions"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 26 Sep 2022 19:13:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "Kestrel"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": \"Eliminar Ticket\",\n    \"description\": \"Nivel de permiso que habilita a eliminar un ticket\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
